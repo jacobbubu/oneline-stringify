@@ -1,0 +1,19 @@
+{
+  "name": "oneline-stringify",
+  "version": "0.0.1",
+  "description": "Stringify object into one line in very condensed way for terminal output",
+  "main": "lib/index.js",
+  "author": "jacobbubu <rong.shen@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "coffee -b -c -o lib/ src/",
+    "watch": "coffee -b -w -c -o lib/ src/"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.11.1"
+  },
+  "dependencies": {
+    "ansi-slice": "^1.2.0",
+    "moment": "^2.15.2"
+  }
+}
