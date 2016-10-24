@@ -9,6 +9,10 @@
     "build": "coffee -b -c -o lib/ src/",
     "watch": "coffee -b -w -c -o lib/ src/"
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/jacobbubu/oneline-stringify.git"
+  },
   "devDependencies": {
     "coffee-script": "^1.11.1"
   },
