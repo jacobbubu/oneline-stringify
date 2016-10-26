@@ -26,11 +26,13 @@ stringify = (val, opts, paths=[]) ->
         out = []
         if paths.length < opts.depth
             itemCount = 0
-            for key of val
+            keys = (k for k of val)
+            keys = keys.sort() if opts.sort
+            for key in keys
                 if itemCount >= opts.maxitems
                     out.push render.REST_ITEMS paths, {
                         maxitems: opts.maxitems
-                        length: Object.keys(val).length
+                        length: keys.length
                         data: val
                     }
                     break
@@ -74,6 +76,7 @@ module.exports =
         opts.showfunc ?= false
         opts.custom ?= false
         opts.depth ?= 6
+        opts.sort ?= false
         opts.maxitems ?= 11
         opts.maxchars ?= 511
         opts.exclude ?= ['$']

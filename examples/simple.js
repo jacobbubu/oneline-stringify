@@ -29,6 +29,7 @@ printDate(new Date('2015-10-01'))
 printArray([1,'2',[3], 4, 5, 6], {maxitems: 4})
 
 printObject({})
+printObject({d: {}, c:{}, b:{}, a: {}}, {sort: true})
 printObject({
     l1: {
         l1_1: [1,2,3],
