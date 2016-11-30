@@ -1,6 +1,6 @@
 {
   "name": "oneline-stringify",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Stringify object into one line in very condensed way for terminal output",
   "main": "lib/index.js",
   "author": "jacobbubu <rong.shen@gmail.com>",
@@ -9,9 +9,9 @@
     "build": "coffee -b -c -o lib/ src/",
     "watch": "coffee -b -w -c -o lib/ src/"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/jacobbubu/oneline-stringify.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobbubu/oneline-stringify.git"
   },
   "devDependencies": {
     "coffee-script": "^1.11.1"
@@ -19,5 +19,6 @@
   "dependencies": {
     "ansi-slice": "^1.2.0",
     "moment": "^2.15.2"
-  }
+  },
+  "files": ["lib"]
 }
